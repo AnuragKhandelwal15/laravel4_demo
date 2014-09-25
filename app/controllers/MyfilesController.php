@@ -24,7 +24,7 @@ class MyfilesController extends \BaseController
             // get uploaded file extension
             //$ext = $file['extension'];
             $ext = $data->guessClientExtension();
-           
+            
             // get size
             $size = $data->getClientSize();
 
@@ -52,20 +52,35 @@ class MyfilesController extends \BaseController
                     $fs->makeDirectory($thumbnail_path, 0777, TRUE);
                     umask($old_umask);
                 }
-                    
-                //conversion to thumbnail
-                $file_path = public_path() . '/gallery/' . Auth::user()->id . '/' . $name;
-                App::make('phpthumb')
-                    ->create('crop', array($file_path, 'center', 200, 200))
-                    ->save($thumbnail_path . '/');
-            
+                
                 $file_obj = new Myfile();
-                $file_obj->file_name = $name;
-                $file_obj->file_type = $data->getClientOriginalExtension();
-                $file_obj->file_path = '/gallery/' . Auth::user()->id . '/' . $name;
-                $file_obj->thumbnail_path = '/thumbnail/' . Auth::user()->id . '/' . $name;
-                $file_obj->user_id = Auth::user()->id;
-                $file_obj->save();
+                    
+                //upload PDF or DOC file
+                if(($ext === 'pdf') || ($ext === 'doc'))
+                {
+                    $file_obj->file_name = $name;
+                    $file_obj->file_type = $data->getClientOriginalExtension();
+                    $file_obj->file_path = '/gallery/' . Auth::user()->id . '/' . $name;
+                    //$file_obj->thumbnail_path = NULL;
+                    $file_obj->user_id = Auth::user()->id;
+                    $file_obj->save();
+                }
+                else 
+                {
+                    //conversion to thumbnail
+                    $file_path = public_path() . '/gallery/' . Auth::user()->id . '/' . $name;
+                    App::make('phpthumb')
+                        ->create('crop', array($file_path, 'center', 200, 200))
+                        ->save($thumbnail_path . '/');
+
+                    $file_obj = new Myfile();
+                    $file_obj->file_name = $name;
+                    $file_obj->file_type = $data->getClientOriginalExtension();
+                    $file_obj->file_path = '/gallery/' . Auth::user()->id . '/' . $name;
+                    $file_obj->thumbnail_path = '/thumbnail/' . Auth::user()->id . '/' . $name;
+                    $file_obj->user_id = Auth::user()->id;
+                    $file_obj->save();
+                }
             }
             
             return Redirect::route('myfiles');

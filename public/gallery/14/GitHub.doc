@@ -1,0 +1,452 @@
+anuragk@anuragk-u14:~$ cd /var/www/projects/
+anuragk@anuragk-u14:/var/www/projects$ ll
+total 1012
+drwxrwxr-x 4 anuragk anuragk    4096 Sep 19 11:08 ./
+drwxrwxrwx 5 root    root       4096 Sep 12 11:54 ../
+-rwxr-xr-x 1 anuragk anuragk 1017914 Sep 12 15:25 composer.phar*
+drwxrwxr-x 7 anuragk anuragk    4096 Sep 15 14:47 demo_app/
+drwxrwxr-x 7 anuragk anuragk    4096 Sep 17 12:53 laravel4_demo/
+anuragk@anuragk-u14:/var/www/projects$ cd ..
+anuragk@anuragk-u14:/var/www$ ll
+total 20
+drwxrwxrwx  5 root    root    4096 Sep 12 11:54 ./
+drwxr-xr-x 14 root    root    4096 Aug 19 20:54 ../
+lrwxrwxrwx  1 root    root      28 Sep 12 11:50 blogs -> /home/anuragk/practice/blogs/
+drwxr-xr-x  2 root    root    4096 Aug 20 11:55 html/
+drwxrwxr-x  4 anuragk anuragk 4096 Sep 19 11:08 projects/
+drwxrwxr-x  2 anuragk anuragk 4096 Aug 25 16:52 uploads/
+anuragk@anuragk-u14:/var/www$ cd html/
+anuragk@anuragk-u14:/var/www/html$ ll
+total 28
+drwxr-xr-x 2 root root  4096 Aug 20 11:55 ./
+drwxrwxrwx 5 root root  4096 Sep 12 11:54 ../
+-rw-r--r-- 1 root root    41 Aug 20 11:28 demo.php
+-rw-r--r-- 1 root root 11510 Aug 19 20:55 index.html
+-rw-r--r-- 1 root root    22 Aug 20 11:26 phpinfo.php
+lrwxrwxrwx 1 root root    22 Aug 20 11:55 practice -> /home/anuragk/practice/
+anuragk@anuragk-u14:/var/www/html$ ssh --help
+unknown option -- -
+usage: ssh [-1246AaCfgKkMNnqsTtVvXxYy] [-b bind_address] [-c cipher_spec]
+           [-D [bind_address:]port] [-E log_file] [-e escape_char]
+           [-F configfile] [-I pkcs11] [-i identity_file]
+           [-L [bind_address:]port:host:hostport] [-l login_name] [-m mac_spec]
+           [-O ctl_cmd] [-o option] [-p port]
+           [-Q cipher | cipher-auth | mac | kex | key]
+           [-R [bind_address:]port:host:hostport] [-S ctl_path] [-W host:port]
+           [-w local_tun[:remote_tun]] [user@]hostname [command]
+anuragk@anuragk-u14:/var/www/html$ ssh -h
+unknown option -- h
+usage: ssh [-1246AaCfgKkMNnqsTtVvXxYy] [-b bind_address] [-c cipher_spec]
+           [-D [bind_address:]port] [-E log_file] [-e escape_char]
+           [-F configfile] [-I pkcs11] [-i identity_file]
+           [-L [bind_address:]port:host:hostport] [-l login_name] [-m mac_spec]
+           [-O ctl_cmd] [-o option] [-p port]
+           [-Q cipher | cipher-auth | mac | kex | key]
+           [-R [bind_address:]port:host:hostport] [-S ctl_path] [-W host:port]
+           [-w local_tun[:remote_tun]] [user@]hostname [command]
+anuragk@anuragk-u14:/var/www/html$ clear
+
+anuragk@anuragk-u14:/var/www/html$ cd ~
+anuragk@anuragk-u14:~$ ll
+total 14420
+drwxr-xr-x 28 anuragk anuragk     4096 Sep 24 10:46 ./
+drwxr-xr-x  3 root    root        4096 Jan 18  2009 ../
+-rw-------  1 anuragk anuragk    11449 Sep 23 19:38 .bash_history
+-rw-r--r--  1 anuragk anuragk      220 Jan 18  2009 .bash_logout
+-rw-r--r--  1 anuragk anuragk     3637 Jan 18  2009 .bashrc
+drwx------ 23 anuragk anuragk     4096 Aug 25 12:53 .cache/
+drwx------  3 anuragk anuragk     4096 Aug 19 20:49 .compiz/
+drwxrwxr-x  3 anuragk anuragk     4096 Sep 12 15:29 .composer/
+drwx------ 23 anuragk anuragk     4096 Sep 18 16:57 .config/
+drwx------  3 root    root        4096 Aug 25 12:53 .dbus/
+drwxr-xr-x  4 anuragk anuragk     4096 Sep 22 17:33 Desktop/
+-rw-r--r--  1 anuragk anuragk       25 Jan 18  2009 .dmrc
+drwxr-xr-x  2 anuragk anuragk     4096 Jan 18  2009 Documents/
+drwxr-xr-x  3 anuragk anuragk     4096 Sep 12 13:32 Downloads/
+-rw-r--r--  1 anuragk anuragk     8980 Jan 18  2009 examples.desktop
+drwx------  4 anuragk anuragk     4096 Sep 24 10:46 .gconf/
+drwx------  3 anuragk anuragk     4096 Aug 19 21:10 .gnome/
+drwx------  2 root    root        4096 Aug 25 12:53 .gvfs/
+-rw-------  1 anuragk anuragk    10148 Sep 24 10:46 .ICEauthority
+drwxrwxr-x  3 anuragk anuragk     4096 Aug 20 11:53 .java/
+drwxrwxr-x  2 anuragk anuragk     4096 Aug 26 18:58 .kchmviewer/
+drwx------  3 anuragk anuragk     4096 Aug 26 15:20 .kde/
+drwxr-xr-x  3 anuragk anuragk     4096 Jan 18  2009 .local/
+drwx------  4 anuragk anuragk     4096 Aug 19 20:57 .mozilla/
+drwxr-xr-x  2 anuragk anuragk     4096 Jan 18  2009 Music/
+drwxrwxr-x  3 anuragk anuragk     4096 Aug 20 11:53 .netbeans/
+-rw-------  1 anuragk anuragk 14575815 Aug 26 15:11 php_manual_en.chm
+drwxr-xr-x  3 anuragk anuragk     4096 Sep  4 18:54 Pictures/
+drwx------  3 anuragk anuragk     4096 Aug 19 21:10 .pki/
+drwxrwxr-x  8 anuragk anuragk     4096 Sep  4 19:05 practice/
+-rw-r--r--  1 anuragk anuragk      675 Jan 18  2009 .profile
+drwxr-xr-x  2 anuragk anuragk     4096 Jan 18  2009 Public/
+drwx------  6 anuragk anuragk     4096 Sep 24 11:22 .Skype/
+drwxr-xr-x  2 anuragk anuragk     4096 Jan 18  2009 Templates/
+drwx------  4 anuragk anuragk     4096 Aug 19 20:54 .thunderbird/
+drwxr-xr-x  2 anuragk anuragk     4096 Jan 18  2009 Videos/
+-rw-------  1 root    root        4808 Sep 17 11:02 .viminfo
+-rw-------  1 anuragk anuragk       56 Sep 24 10:46 .Xauthority
+-rw-------  1 anuragk anuragk      108 Sep 24 10:46 .xsession-errors
+-rw-------  1 anuragk anuragk      888 Sep 23 19:38 .xsession-errors.old
+anuragk@anuragk-u14:~$ mkdir .ssh
+anuragk@anuragk-u14:~$ ll
+total 14424
+drwxr-xr-x 29 anuragk anuragk     4096 Sep 24 11:31 ./
+drwxr-xr-x  3 root    root        4096 Jan 18  2009 ../
+-rw-------  1 anuragk anuragk    11449 Sep 23 19:38 .bash_history
+-rw-r--r--  1 anuragk anuragk      220 Jan 18  2009 .bash_logout
+-rw-r--r--  1 anuragk anuragk     3637 Jan 18  2009 .bashrc
+drwx------ 23 anuragk anuragk     4096 Aug 25 12:53 .cache/
+drwx------  3 anuragk anuragk     4096 Aug 19 20:49 .compiz/
+drwxrwxr-x  3 anuragk anuragk     4096 Sep 12 15:29 .composer/
+drwx------ 23 anuragk anuragk     4096 Sep 18 16:57 .config/
+drwx------  3 root    root        4096 Aug 25 12:53 .dbus/
+drwxr-xr-x  4 anuragk anuragk     4096 Sep 22 17:33 Desktop/
+-rw-r--r--  1 anuragk anuragk       25 Jan 18  2009 .dmrc
+drwxr-xr-x  2 anuragk anuragk     4096 Jan 18  2009 Documents/
+drwxr-xr-x  3 anuragk anuragk     4096 Sep 12 13:32 Downloads/
+-rw-r--r--  1 anuragk anuragk     8980 Jan 18  2009 examples.desktop
+drwx------  4 anuragk anuragk     4096 Sep 24 10:46 .gconf/
+drwx------  3 anuragk anuragk     4096 Aug 19 21:10 .gnome/
+drwx------  2 root    root        4096 Aug 25 12:53 .gvfs/
+-rw-------  1 anuragk anuragk    10148 Sep 24 10:46 .ICEauthority
+drwxrwxr-x  3 anuragk anuragk     4096 Aug 20 11:53 .java/
+drwxrwxr-x  2 anuragk anuragk     4096 Aug 26 18:58 .kchmviewer/
+drwx------  3 anuragk anuragk     4096 Aug 26 15:20 .kde/
+drwxr-xr-x  3 anuragk anuragk     4096 Jan 18  2009 .local/
+drwx------  4 anuragk anuragk     4096 Aug 19 20:57 .mozilla/
+drwxr-xr-x  2 anuragk anuragk     4096 Jan 18  2009 Music/
+drwxrwxr-x  3 anuragk anuragk     4096 Aug 20 11:53 .netbeans/
+-rw-------  1 anuragk anuragk 14575815 Aug 26 15:11 php_manual_en.chm
+drwxr-xr-x  3 anuragk anuragk     4096 Sep  4 18:54 Pictures/
+drwx------  3 anuragk anuragk     4096 Aug 19 21:10 .pki/
+drwxrwxr-x  8 anuragk anuragk     4096 Sep  4 19:05 practice/
+-rw-r--r--  1 anuragk anuragk      675 Jan 18  2009 .profile
+drwxr-xr-x  2 anuragk anuragk     4096 Jan 18  2009 Public/
+drwx------  6 anuragk anuragk     4096 Sep 24 11:22 .Skype/
+drwxrwxr-x  2 anuragk anuragk     4096 Sep 24 11:31 .ssh/
+drwxr-xr-x  2 anuragk anuragk     4096 Jan 18  2009 Templates/
+drwx------  4 anuragk anuragk     4096 Aug 19 20:54 .thunderbird/
+drwxr-xr-x  2 anuragk anuragk     4096 Jan 18  2009 Videos/
+-rw-------  1 root    root        4808 Sep 17 11:02 .viminfo
+-rw-------  1 anuragk anuragk       56 Sep 24 10:46 .Xauthority
+-rw-------  1 anuragk anuragk      108 Sep 24 10:46 .xsession-errors
+-rw-------  1 anuragk anuragk      888 Sep 23 19:38 .xsession-errors.old
+anuragk@anuragk-u14:~$ cd .ssh/
+anuragk@anuragk-u14:~/.ssh$ clear
+
+anuragk@anuragk-u14:~/.ssh$ ll
+total 8
+drwxrwxr-x  2 anuragk anuragk 4096 Sep 24 11:31 ./
+drwxr-xr-x 29 anuragk anuragk 4096 Sep 24 11:31 ../
+anuragk@anuragk-u14:~/.ssh$ ssh-keygen -t rsa -C "anuragk@mindfiresolutions.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/anuragk/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/anuragk/.ssh/id_rsa.
+Your public key has been saved in /home/anuragk/.ssh/id_rsa.pub.
+The key fingerprint is:
+ae:77:58:a2:31:8f:a5:33:fa:5f:11:1d:a6:30:89:ff anuragk@mindfiresolutions.com
+The key's randomart image is:
++--[ RSA 2048]----+
+|       .o.  o    |
+|      . .o + .   |
+|       .  o .    |
+|        .  .     |
+|        S..      |
+|      o.o E.     |
+|       O.+.      |
+|      *.+..      |
+|    .oo=..       |
++-----------------+
+anuragk@anuragk-u14:~/.ssh$ ll
+total 16
+drwxrwxr-x  2 anuragk anuragk 4096 Sep 24 11:34 ./
+drwxr-xr-x 29 anuragk anuragk 4096 Sep 24 11:31 ../
+-rw-------  1 anuragk anuragk 1766 Sep 24 11:34 id_rsa
+-rw-r--r--  1 anuragk anuragk  411 Sep 24 11:34 id_rsa.pub
+anuragk@anuragk-u14:~/.ssh$ cat id_rsa.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5bgAvO4bmFvIF6JuTljGcNlIpjjPuLawGuvZ87AQpL/2xxKQpFNpKdH6fzoyFOLtJpZ9rEF279lyRQAqAwIbqjH3m4jL4RnoZ1C5tmHKXaRnLUbsfMRDmuL9jS/gmh9pw7VpJH5sqLRHzSU6duiDuIHPfiYHG5veY+RR68u+rmyB+PlwJNH6LoWOoJ/e3GYNh4dqILuFdlkQsLqlDleTmdPdpVqaw6dHmAg38OKMHZqqcgRExfiqjtsAm7G1UpnYSqZ86xKWQLaMpZhcVv/m73wOJnpQBubhDeCwfdsuVJJvFBbXqXPPv6ckfex6GnYPmYL485MzNohJooqU/eoAd anuragk@mindfiresolutions.com
+anuragk@anuragk-u14:~/.ssh$ cat id_rsa
+-----BEGIN RSA PRIVATE KEY-----
+Proc-Type: 4,ENCRYPTED
+DEK-Info: AES-128-CBC,3846C92E77D6735C659905F092B3EF09
+
+webqgJn6K/xXPuexqOAeiHIboQXIL5+NWyY0bHX8IjprZZZKAELAt7dWKXWf9P95
+QwNhSH4W6dVno7rc3Lgogt7imdlJSDRp5l49jNyxof8nmz4y7NwzVxps3k/twq7N
+RHUFvFWLEr113EaXF43J//4ZFWuBwFX2PdJMBx2iucz/wzwKvWz/y/xvHbqGA/wI
+QtjY6w/OAcaiZC+J+aC2O16gvDn1KWq74V5dIbfQ4VHwuF4ulmP3zhs0jvRSqbO2
+j6Z/CpyL8LPRPhepPCJi16s/vTeC162lgolgrcz7Ncl62vZqVjGO43HQCkkvt46J
+OwPi3TWR6aPbglCmCsNvBK/kjbWAbgNQHzEH1JhuQmP7FboXHrdFVKsZKf/ttAqG
+2KuDsKnLK0PiUyeVIbo8a24gLfg0WzTFIH2eCcH3ZcvAl+sWlmuH8FHbtpldu9Qg
+09LAMvLLMPAkne6zDdkBMxyNxlyLVj0YmaSnY30YUbSKJR6TSqoTfauVlg9FlUvA
+K4+nlzOfkraPD2S3ETVfjOa5eJkhkso7ZtKNjEHLuR/VX70jvPp1Ytmg/pRrl4U/
+XfxuBHyqHKRwQBTbhgCEfOr9Qkv1mCOJT40aY4DMVxlOnj5K9o5q8FJv+I8ACVLF
+T0tz+uS2X8L4ok1vR/Z6a8HOXk+XJ/HrnmE4G4awIUWSTrjkV+P1kJAelbBSfTQq
+LSkU1z8kY3IjcmgMoAnfRT5twmNHCSjtDB7ix4HVMkhzV/+2lON0X4zWjQ5qlDf7
+rQ+74Oph6LrGIaOoeZRoujPHfqdCLjc6vFqF+Gy6RKPbwBYwCfQE5O/dG2EA6uvX
+Xi4cLtzaE1+u+LuqJKx1KAcxiYSxof+HU/ElRZMl7QiVctqiYCHU27vEZth+Eiye
+14up95o0Hiacwf6XBKCQ8hTf43Hh2CqnW0wgcrIU+Z5QHqvDzFho2EGW5+UUOX8g
+S4bm8V0vH1hLwDsOINdZUHvs8pZgEx6Jzv1Gegc9b6aBuMidEgDC6aKt6iVLYjHa
+0EVFZ6mLvcydNEBehbrQpcIeFYcr+RziJ/sz1yJNpNnbAzdnPPIba8YUpit/4kke
+c6YiOg38BuVwqUYoGhPYlqF+8xz39Se6g4k8RSl5Qvz03sD3mbpdVhTt0zPzXhgQ
+FHEdIczscSUXd+jSCqN8KzOh6Ch3I7Omvu7s2k6zvpsirB+WcDfZ8IZ+fhGKB7MA
+aVvWlJZ5lpX0ZOCI6yd81GXA8QJXzOsgBbChdvwtK5ysI+fAjhY1iIELG6rluBjZ
+6opZsYEoyD6ui0PmmxfXeJeYrWWSpCQZx/98W61uHLg7hE0sSWKBTfSnl9dcsvu4
+oesN4UeduLvmWO067/kB1On8oRGLrCxXxAJMT1JGHd7T7ySjag1sni3UqPmfZMc8
+CyHw567VgV8DrO2GU0B+Z9cx32Ku6Ottf3ELO+kco0L2cafUnsiB+4re0haVEeUL
+Zok7qRD9h3ImncFIG1q0sqNHKpgXj6AvYo4/g1cJTBW0ATJso4QB5DLsSWZhuxDq
+Mt0Zce5rBzudHPrQVanCoERif5oPzddiJivgIY7hWLMm80ZcTlGf3BUxPImwIXuf
+-----END RSA PRIVATE KEY-----
+anuragk@anuragk-u14:~/.ssh$ 
+anuragk@anuragk-u14:~/.ssh$ 
+anuragk@anuragk-u14:~/.ssh$ cd /var/www/html/
+anuragk@anuragk-u14:/var/www/html$ clear
+
+anuragk@anuragk-u14:/var/www/html$ ssh -T git@github.com
+The authenticity of host 'github.com (192.30.252.128)' can't be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.252.128' (RSA) to the list of known hosts.
+Hi AnuragKhandelwal15! You've successfully authenticated, but GitHub does not provide shell access.
+anuragk@anuragk-u14:/var/www/html$ git clone git@github.com:AnuragKhandelwal15/hello-world.git
+The program 'git' is currently not installed. You can install it by typing:
+sudo apt-get install git
+anuragk@anuragk-u14:/var/www/html$ sudo apt-get install git
+[sudo] password for anuragk: 
+no talloc stackframe at ../source3/param/loadparm.c:4864, leaking memory
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  kde-l10n-engb
+Use 'apt-get autoremove' to remove it.
+The following extra packages will be installed:
+  git-man liberror-perl
+Suggested packages:
+  git-daemon-run git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+  gitweb git-arch git-bzr git-cvs git-mediawiki git-svn
+The following NEW packages will be installed:
+  git git-man liberror-perl
+0 upgraded, 3 newly installed, 0 to remove and 149 not upgraded.
+Need to get 3,274 kB of archives.
+After this operation, 21.6 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty/main liberror-perl all 0.17-1.1 [21.1 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu/ trusty/main git-man all 1:1.9.1-1 [698 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu/ trusty/main git amd64 1:1.9.1-1 [2,555 kB]
+Fetched 3,274 kB in 13s (236 kB/s)                                             
+Selecting previously unselected package liberror-perl.
+(Reading database ... 218461 files and directories currently installed.)
+Preparing to unpack .../liberror-perl_0.17-1.1_all.deb ...
+Unpacking liberror-perl (0.17-1.1) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../git-man_1%3a1.9.1-1_all.deb ...
+Unpacking git-man (1:1.9.1-1) ...
+Selecting previously unselected package git.
+Preparing to unpack .../git_1%3a1.9.1-1_amd64.deb ...
+Unpacking git (1:1.9.1-1) ...
+Processing triggers for man-db (2.6.7.1-1) ...
+Setting up liberror-perl (0.17-1.1) ...
+Setting up git-man (1:1.9.1-1) ...
+Setting up git (1:1.9.1-1) ...
+anuragk@anuragk-u14:/var/www/html$ git clone git@github.com:AnuragKhandelwal15/hello-world.git
+fatal: could not create work tree dir 'hello-world'.: Permission denied
+anuragk@anuragk-u14:/var/www/html$ cd practice
+anuragk@anuragk-u14:/var/www/html/practice$ git clone git@github.com:AnuragKhandelwal15/hello-world.git
+Cloning into 'hello-world'...
+remote: Counting objects: 7, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 7 (delta 2), reused 0 (delta 0)
+Receiving objects: 100% (7/7), done.
+Resolving deltas: 100% (2/2), done.
+Checking connectivity... done.
+anuragk@anuragk-u14:/var/www/html/practice$ ll
+total 264
+drwxrwxr-x  9 anuragk anuragk 4096 Sep 24 11:43 ./
+drwxr-xr-x 29 anuragk anuragk 4096 Sep 24 11:31 ../
+-rw-rw-r--  1 anuragk anuragk  914 Aug 20 13:05 array1.php
+drwxrwxr-x  4 anuragk anuragk 4096 Sep 11 19:08 blogs/
+-rw-rw-r--  1 anuragk anuragk 1658 Aug 21 12:08 bubble_sort1.php
+-rw-rw-r--  1 anuragk anuragk  566 Aug 21 11:35 bubble_sort2.php
+-rw-rw-r--  1 anuragk anuragk  806 Aug 21 12:24 bubble_sort.php
+drwxrwxr-x  3 anuragk anuragk 4096 Aug 22 11:58 css/
+-rw-rw-r--  1 anuragk anuragk  239 Aug 26 12:03 database1.php
+-rw-rw-r--  1 anuragk anuragk  344 Aug 26 12:16 database2.php
+-rw-rw-r--  1 anuragk anuragk  454 Aug 26 12:23 database3.html
+-rw-rw-r--  1 anuragk anuragk  619 Aug 26 12:33 database3.php
+-rw-rw-r--  1 anuragk anuragk  373 Aug 26 12:48 database4.php
+-rw-rw-r--  1 anuragk anuragk 1006 Aug 26 18:16 database5.php
+-rw-rw-r--  1 anuragk anuragk  832 Aug 26 17:28 database6.php
+-rw-rw-r--  1 anuragk anuragk 1014 Aug 26 18:12 database7.php
+-rw-rw-r--  1 anuragk anuragk  836 Aug 29 13:46 database8.php
+-rw-rw-r--  1 anuragk anuragk  948 Aug 26 18:24 database9.php
+-rw-rw-r--  1 anuragk anuragk   83 Aug 25 18:32 Date1.php
+-rw-rw-r--  1 anuragk anuragk  215 Aug 25 18:26 Date.php
+-rw-rw-r--  1 anuragk anuragk  225 Aug 20 11:58 demo.php
+-rw-rw-r--  1 anuragk anuragk  919 Aug 28 15:52 email1.php
+-rw-rw-r--  1 anuragk anuragk  199 Aug 25 17:30 FileRead.php
+-rw-rw-r--  1 anuragk anuragk  307 Aug 25 16:01 FileUpload.html
+-rw-rw-r--  1 anuragk anuragk  371 Aug 25 17:02 FileUpload.php
+-rw-rw-r--  1 anuragk anuragk  351 Aug 25 11:09 form1.html
+-rw-rw-r--  1 anuragk anuragk  337 Aug 25 19:28 form1.php
+-rw-rw-r--  1 anuragk anuragk  187 Aug 25 11:51 form2.html
+-rw-rw-r--  1 anuragk anuragk  125 Aug 25 11:51 form2.php
+-rw-rw-r--  1 anuragk anuragk 2691 Aug 25 13:00 form3.php
+-rw-rw-r--  1 anuragk anuragk  334 Aug 25 17:58 form4.php
+-rw-rw-r--  1 anuragk anuragk  431 Aug 20 17:14 function1.php
+-rw-rw-r--  1 anuragk anuragk  461 Aug 20 17:21 function2.php
+-rw-rw-r--  1 anuragk anuragk 1253 Aug 20 17:41 functionoverload.php
+-rw-rw-r--  1 anuragk anuragk  224 Aug 25 19:31 getposttogether.php
+drwxrwxr-x  3 anuragk anuragk 4096 Sep 24 11:43 hello-world/
+drwxrwxr-x  2 anuragk anuragk 4096 Sep  4 19:05 images/
+-rw-rw-r--  1 anuragk anuragk 2820 Aug 29 10:30 LoginPage1.html
+-rw-rw-r--  1 anuragk anuragk  293 Aug 25 15:37 LoginPage1.php
+-rw-rw-r--  1 anuragk anuragk  667 Aug 21 13:38 loginpage.html
+drwxrwxr-x  3 anuragk anuragk 4096 Aug 20 11:57 nbproject/
+-rw-rw-r--  1 anuragk anuragk 5326 Aug 25 16:15 Register.html
+-rw-rw-r--  1 anuragk anuragk 1365 Aug 28 19:25 session2.php
+-rw-rw-r--  1 anuragk anuragk  908 Aug 28 19:27 session.php
+-rw-rw-r--  1 anuragk anuragk  945 Aug 27 19:02 test10.php
+-rw-rw-r--  1 anuragk anuragk  101 Aug 27 12:18 test2.php
+-rw-rw-r--  1 anuragk anuragk  267 Aug 27 12:43 test3.php
+-rw-rw-r--  1 anuragk anuragk  657 Aug 27 16:24 test4.php
+-rw-rw-r--  1 anuragk anuragk  162 Aug 27 16:12 test5.php
+-rw-rw-r--  1 anuragk anuragk  591 Aug 27 16:36 test6.php
+-rw-rw-r--  1 anuragk anuragk 1716 Aug 27 17:16 test7.php
+-rw-rw-r--  1 anuragk anuragk  354 Aug 27 16:37 test8.php
+-rw-rw-r--  1 anuragk anuragk  227 Aug 27 17:02 test9.php
+-rw-rw-r--  1 anuragk anuragk  148 Aug 27 12:24 test.php
+-rw-rw-r--  1 anuragk anuragk  141 Aug 25 18:35 Time1.php
+-rw-rw-r--  1 anuragk anuragk  144 Aug 25 18:37 Time2.php
+-rw-rw-r--  1 anuragk anuragk  148 Aug 25 18:39 Time4.php
+-rw-rw-r--  1 anuragk anuragk  262 Aug 25 18:41 Time5.php
+-rw-rw-r--  1 anuragk anuragk  259 Aug 25 18:44 Time6.php
+-rw-rw-r--  1 anuragk anuragk  170 Aug 25 18:48 Time7.php
+-rw-rw-r--  1 anuragk anuragk   94 Aug 25 18:33 Time.php
+drwxrwxrwx  2 anuragk anuragk 4096 Aug 25 17:06 uploads/
+drwxrwxr-x  3 anuragk anuragk 4096 Aug 25 14:36 WebDesign/
+-rw-rw-r--  1 anuragk anuragk  411 Aug 25 17:29 WelcomePage1.php
+-rw-rw-r--  1 anuragk anuragk  343 Aug 25 15:26 WelcomePageError.php
+anuragk@anuragk-u14:/var/www/html/practice$ cd hello-world/
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ ll
+total 16
+drwxrwxr-x 3 anuragk anuragk 4096 Sep 24 11:43 ./
+drwxrwxr-x 9 anuragk anuragk 4096 Sep 24 11:43 ../
+drwxrwxr-x 8 anuragk anuragk 4096 Sep 24 11:43 .git/
+-rw-rw-r-- 1 anuragk anuragk   87 Sep 24 11:43 README.md
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ clear
+
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working directory clean
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ vim index.html
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ git add index.html 
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   index.html
+
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ git commit -m "Added a new file." -a
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'anuragk@anuragk-u14.(none)')
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$  git config --global user.email "anuragk@mindfiresolutions.com"
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ git config --global user.name "Anurag"
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ 
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ 
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   index.html
+
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ git commit -m "Added a new file." -a
+[master 8824e69] Added a new file.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ git push origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 309 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:AnuragKhandelwal15/hello-world.git
+   c6723f2..8824e69  master -> master
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ clear
+
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ vim index.html 
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ git status\
+> 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ git diff index.html
+diff --git a/index.html b/index.html
+index 13b5d0f..d262165 100644
+--- a/index.html
++++ b/index.html
+@@ -1 +1,3 @@
+ This is a demo repository.
++
++Trying git commands.
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ git commit -m "Added new line." -a
+[master 016a5f6] Added new line.
+ 1 file changed, 2 insertions(+)
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 331 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:AnuragKhandelwal15/hello-world.git
+   8824e69..016a5f6  master -> master
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ clear
+
+
+anuragk@anuragk-u14:/var/www/html/practice/hello-world$ 
+
+
